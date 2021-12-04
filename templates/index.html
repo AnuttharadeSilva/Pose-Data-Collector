@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Data collector</title>
+</head>
+<body>
+    <h2>Pose Data Collector</h2>
+    <h3>*create dataset*</h3>
+    <div>
+        <form method="post" action="{{ url_for('index')}}">
+            <label>Your name: </label>
+            <input type="text" name="your_name"/><br>
+            <label>Class name:</label>
+            <select name="class_name">
+                <option value="neutral">Neutral</option>
+                <option value="in a call">In a Call</option>
+                <option value="yawning">Yawning</option>
+                <option value="hands on cheek">Hand/hands on cheek</option>
+                <option value="hands on head">Hand/hands on head</option>
+                <option value="use phone">Use phone</option>
+              </select><br>
+            <button type="submit" name="submit_form" value="submit_form">Start</button>
+        </form>
+    </div>
+    <div>
+        <label></label>
+    </div>
+</body>
+</html>
