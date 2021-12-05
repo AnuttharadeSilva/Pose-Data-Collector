@@ -32,9 +32,9 @@ class Video:
             os.mkdir(image_path)
 
         class_name = class_name
-        timeout = time.time() + 30
 
         cap = cv2.VideoCapture(0)
+        timeout = time.time() + 30
         with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
             while cap.isOpened():
                 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
