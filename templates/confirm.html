@@ -8,13 +8,14 @@
 </head>
 <body>
     <h2>Pose Data Collector</h2>
-    <h3>*upload dataset*</h3>
+    <h3>*Save dataset*</h3>
     <div>
-        <form method="post" action="{{ url_for('save')}}">
-            <input name="filename" value="{{ file_name }}"/><label>.csv</label>
-            <br>
-            <button type="submit" name="save" value="save">Save data</button>
-        </form>
+<!--        <form method="post" action="{{ url_for('save')}}">-->
+<!--            <input name="filename" value="{{ file_name }}"/><label>.csv</label>-->
+<!--            <br>-->
+<!--            <button type="submit" name="save" value="save">Save data</button>-->
+<!--        </form>-->
+        <p>Dataset saved sucessfully!</p>
         <br>
         <a href = "{{ url_for('index') }}" class="btn btn-default">Go Back</a>
     </div>
