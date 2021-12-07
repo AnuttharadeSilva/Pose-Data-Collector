@@ -1,2 +1,6 @@
 venv/
 coords.csv
+Google.py
+google_drive.py
+client_secret_file.jsons
+datasets/
