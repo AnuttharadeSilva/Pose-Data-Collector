@@ -6,10 +6,7 @@ cd Pose-Data-Collector
 py -3 -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-````
-create a folder called 'datasets' inside main directory
-
-````
+mkdir datasets
 flask run
 ````
 go to http://127.0.0.1:5000/
