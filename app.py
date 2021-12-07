@@ -7,6 +7,7 @@ import time
 import uuid
 
 app = Flask(__name__)
+
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
@@ -26,20 +27,20 @@ def index():
     return render_template('index.html')
 
 
-# @app.route('/save', methods=['GET', 'POST'])
-# @cross_origin()
-# def save():
-#     if request.method == 'POST':
-#         if request.form.get('save'):
-#             file_name = request.form['filename']
-#             socket.setdefaulttimeout(60*60)
-#             try:
-#                 Upload.upload_data(Upload, file_name)
-#                 # print(file_name)
-#             except socket.timeout:
-#                 print('time out!')
-#             return render_template('index.html')
-#     return render_template('confirm.html')
+@app.route('/save', methods=['GET', 'POST'])
+@cross_origin()
+def save():
+    # if request.method == 'POST':
+    #     if request.form.get('save'):
+    #         file_name = request.form['filename']
+    #         socket.setdefaulttimeout(60*60)
+    #         try:
+    #             Upload.upload_data(Upload, file_name)
+    #             # print(file_name)
+    #         except socket.timeout:
+    #             print('time out!')
+    #         return render_template('index.html')
+    return render_template('confirm.html')
 
-
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
