@@ -1,12 +1,12 @@
-#Pose Data Collector
+# Pose Data Collector
 
 Student pose data collecting tool 
 
-##Dataset
+## Dataset
 
 [Student pose dataset](https://drive.google.com/drive/folders/1v_Ppay4fQDfqA133bTYmAEos3xlhPyQ3?usp=sharing)
 
-##How to use
+## How to use
 
 ````
 git clone https://github.com/AnuttharadeSilva/Pose-Data-Collector.git
