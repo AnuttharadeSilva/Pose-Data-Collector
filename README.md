@@ -1,4 +1,12 @@
-Steps:
+#Pose Data Collector
+
+Student pose data collecting tool 
+
+##Dataset
+
+[Student pose dataset](https://drive.google.com/drive/folders/1v_Ppay4fQDfqA133bTYmAEos3xlhPyQ3?usp=sharing)
+
+##How to use
 
 ````
 git clone https://github.com/AnuttharadeSilva/Pose-Data-Collector.git
@@ -9,4 +17,3 @@ pip install -r requirements.txt
 mkdir datasets
 flask run
 ````
-go to http://127.0.0.1:5000/
