@@ -35,6 +35,8 @@ pip install -r requirements.txt
 mkdir datasets
 flask run
 ````
+Navigate to http://localhost:5000/
+
 ### Collecting data
 
 - Select a class from the drop down and press start
